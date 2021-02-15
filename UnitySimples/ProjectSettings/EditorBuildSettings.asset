@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/JMFSimples/Scenes/Principal.unity
+    guid: dd6a3a008b210d94db1b3f416b003172
   m_configObjects: {}
