@@ -28,7 +28,7 @@ public class CircunventDropdownJMF : MonoBehaviour
             Item.sizeDelta = newSizeDelta; //Atribui o novo tamanho para o Item
         }
     }
-    private void Start()
+    private void Start() //Se o ExecuteInEditMode estive habilitado pode não ser necessário
     {
         if ((rectTransform != null) && (Item != null)) //Se já tem o Rectransform e o Item
         {
