@@ -6,7 +6,7 @@ using UnityEngine;
 public class ManagerGSheetJMF : MonoBehaviour
 {
     private const string Verifica = "JMFUTGS"; //Conteúdo da primeira célula da planilha
-    private const string BackupFilename = "csvlocal.jmf"; //Nome to arquivo de backup local
+    private const string BackupFilename = "csvlocaljson.jmf"; //Nome to arquivo de backup local
     public float Progresso { get; private set; } = 0f;//Percentual já carregado para uso externo
     private bool LoadingCSVGSheet = false;// Flag que indica se está carregando 
     public bool Finalizado { get; private set; } = false;//Percentual já carregado para uso externo

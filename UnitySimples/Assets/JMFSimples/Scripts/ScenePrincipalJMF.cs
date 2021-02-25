@@ -7,7 +7,7 @@ using UnityEngine.UI;
 //*****     *****
 public class ScenePrincipalJMF : MonoBehaviour
 {
-    const string FileName = "appdata.jmf"; //Podia ser mais criativo ou genérico?
+    const string FileName = "appdatajson.jmf"; //Podia ser mais criativo ou genérico?
     [Header("Dados Save/Load")]
     [SerializeField] private Toggle SavedataBool = default;
     [SerializeField] private InputField SavedataInt = default;
