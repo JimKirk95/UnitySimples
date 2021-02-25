@@ -29,9 +29,12 @@ public class ScenePrincipalJMF : MonoBehaviour
     }
     public void UpdateCSVData() //Estou pegando as celuas (B2, C2 e D2 da minha planilha)
     { //Modifique à vontade. E pode usar uma planilha sua no GlobalDownloadGSheetJMF
-        GSheetB2.text = GlobalDownloadGSheetJMF.PlanilhaGSheet[1, 1];
-        GSheetC2.text = GlobalDownloadGSheetJMF.PlanilhaGSheet[1, 2];
-        GSheetD2.text = GlobalDownloadGSheetJMF.PlanilhaGSheet[1, 3];
+        if (GlobalDownloadGSheetJMF.TemDados)
+        {
+            GSheetB2.text = GlobalDownloadGSheetJMF.PlanilhaGSheet[1, 1];
+            GSheetC2.text = GlobalDownloadGSheetJMF.PlanilhaGSheet[1, 2];
+            GSheetD2.text = GlobalDownloadGSheetJMF.PlanilhaGSheet[1, 3];
+        }
     }
     public void AcaoSaveData() //Salva os dados em arquivo
     {
